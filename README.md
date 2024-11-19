@@ -5,13 +5,13 @@
 ## Установка
 
 ```bash
-yarn
-yarn start
+npm i
+npm start
 ```
 
 ## Сборка
 
 ```bash
-yarn build
-yarn pages
+npm run build
+npm run pages
 ```
