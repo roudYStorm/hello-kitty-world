@@ -1,0 +1,114 @@
+@import url('./fonts/fonts.scss');
+@import url('./zero-styles.scss');
+
+.header {
+    display: flex;
+    padding: 26px 52px;
+    justify-content: space-between;
+    align-items: center;
+    background: #FFA3C2;
+    position: relative;
+    z-index: 2;
+}
+
+.header__clouds {
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 117px;
+    top: 80px;
+    background: url('../../public/images/header-clouds.png') center / 100% 100% repeat;
+}
+
+.logo {
+    color: #FFF;
+    font-family: Lilita-one;
+    font-size: 24px;
+}
+
+.header__navbar {
+    display: flex;
+    align-items: center;
+    gap: 15px
+}
+
+.header__navlink {
+    font-family: Lilita-one;
+    color: #FFF;
+}
+.header__navbutton {
+    font-family: Lilita-one;
+    color: #F26D9A;
+    padding: 5px 0;
+    width: 95px;
+    display: inline-block;
+    text-align: center;
+    background: #FFF;
+    border-radius: 9px;
+}
+
+.header__button-wrapper {
+    display: flex;
+    gap: 6px;
+}
+
+.welcome {
+    height: calc(100vh - 80.5px);
+    background: #FFECF1 url(../../public/images/background-lines.svg) repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.welcome__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.welcome__title {
+    text-align: center;
+    color: #FFADDD;
+    font-size: 96px;
+    font-family: Lilita-one;
+    text-shadow: 9px 5px #F4519A;
+    letter-spacing: 3px;
+    margin: 0;
+}
+.welcome__subscription {
+    font-size: 60px;
+    color: #201E1E;
+    margin: 0;
+    font-family: Lilita-one;
+}
+
+.welcome__arrow {
+    position: absolute;
+    width: 25px;
+    height: 15px;
+    display: inline-block;
+    background: url(../../public/images/down-arrow.svg) center / contain no-repeat;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(0, 50%);
+}
+
+.info {
+    background: #F26D9A;
+    padding: 64px;
+    display: grid;
+    grid-template-columns: auto 410px;
+    grid-template-rows: 328px 328px;
+    gap: 10px;
+}
+
+.info__card {
+    background: #FFECF1;
+    border-radius: 16px;
+    border: 2px solid #201E1E;
+}
+
+.info__card:nth-of-type(3) {
+    grid-column: 1 / span 2;
+}
