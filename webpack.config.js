@@ -13,7 +13,18 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
+            filename: 'index.html',
             template: path.resolve(__dirname, './src/index.html'),
+            alwaysWriteToDisk: true
+        }),
+        new HtmlWebpackPlugin({
+            template: path.resolve(__dirname, './src/login.html'),
+            filename: 'login.html',
+            alwaysWriteToDisk: true
+        }),
+        new HtmlWebpackPlugin({
+            template: path.resolve(__dirname, './src/register.html'),
+            filename: 'register.html',
             alwaysWriteToDisk: true
         }),
         new CleanWebpackPlugin(),
@@ -43,7 +54,7 @@ module.exports = {
 
     mode: 'development',
     devServer: {
-        watchFiles: ['./src/index.html'],
+        watchFiles: ['./src/index.html', './src/login.html', './src/register.html'],
         historyApiFallback: true,
         open: true,
         compress: true,
